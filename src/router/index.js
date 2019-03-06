@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import auth from '@/components/Auth'
 import zhousheng from '@/components/zhousheng'
+import table from '@/components/table'
 Vue.use(Router)
 console.log(456)
 export default new Router({
@@ -21,6 +22,11 @@ export default new Router({
       path: '/zhousheng',
       name: 'zhousheng',
       component: zhousheng
+    },
+    {
+      path: '/table',
+      name: 'table',
+      component: table
     }
   ]
 })
